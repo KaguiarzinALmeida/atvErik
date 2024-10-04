@@ -1,13 +1,13 @@
 <?php
-// Conexão com o banco de dados
-$servername = "localhost"; // Substitua pelo seu servidor
-$username = "root"; // Substitua pelo seu usuário do banco
-$password = ""; // Substitua pela sua senha do banco
-$dbname = "mercado_doido"; // Substitua pelo seu banco de dados
+
+$servername = "localhost"; 
+$username = "root"; 
+$password = ""; 
+$dbname = "mercado_doido"; 
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Verifica a conexão
+
 if ($conn->connect_error) {
     die("Conexão falhou: " . $conn->connect_error);
 }
